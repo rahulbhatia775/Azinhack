@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 258 70% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 180 100% 50%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 0%;
+    --input: 0 0% 0%;
+    --ring: 180 100% 50%;
+
+    --radius: 0rem;
+
+    /* Hackathon color palette */
+    --cyan: 180 100% 50%;
+    --yellow: 60 100% 50%;
+    --magenta: 300 100% 50%;
+    --purple: 258 70% 60%;
+    --lime: 120 100% 50%;
+    --black: 0 0% 0%;
+    --white: 0 0% 100%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--cyan)), hsl(var(--magenta)));
+    --gradient-purple: linear-gradient(180deg, hsl(258 70% 60%), hsl(258 70% 50%));
+    
+    /* Shadows */
+    --shadow-bold: 8px 8px 0px hsl(var(--black));
+    --shadow-glow: 0 0 40px hsl(var(--cyan) / 0.5);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
