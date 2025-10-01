@@ -13,7 +13,6 @@ import MarqueeRotated from "@/components/MarqueeRotated";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <MarqueeBanner />
       <Hero />
       <MarqueeBanner />
       <MarqueeRotated/>
