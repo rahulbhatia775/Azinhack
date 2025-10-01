@@ -15,8 +15,18 @@ const ScheduleSection = () => {
   ];
 
   return (
-    <section id="schedule" className="bg-yellow py-20 md:py-32 border-y-8 border-black">
-      <div className="container mx-auto px-6">
+    <section id="schedule" className="bg-yellow py-20 md:py-32 border-y-8 border-black relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-10 left-10 w-32 h-32 bg-cyan border-4 border-black rotate-12 animate-float opacity-20" />
+        <div className="absolute top-40 right-20 w-24 h-24 rounded-full bg-magenta border-4 border-black animate-float opacity-20" style={{ animationDelay: '1s' }} />
+        <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-purple border-4 border-black -rotate-12 animate-float opacity-20" style={{ animationDelay: '2s' }} />
+        <div className="absolute bottom-40 right-10 w-28 h-28 bg-lime border-4 border-black rotate-45 animate-float opacity-20" style={{ animationDelay: '0.5s' }} />
+        <div className="absolute top-1/2 left-10 w-20 h-20 rounded-full bg-cyan border-4 border-black animate-float opacity-20" style={{ animationDelay: '1.5s' }} />
+        <div className="absolute top-20 right-1/3 w-36 h-36 bg-magenta border-4 border-black rotate-6 animate-float opacity-20" style={{ animationDelay: '0.8s' }} />
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
         <h2 className="text-5xl md:text-7xl font-black text-black mb-16 text-center">
           SCHEDULE
         </h2>
