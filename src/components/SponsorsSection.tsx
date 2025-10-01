@@ -1,3 +1,12 @@
+import Image1 from "../assets/Docker.png";
+import Image2 from "../assets/xyz-logo.png"; 
+import Image3 from "../assets/clothing.jpg"; 
+const sponsors = [
+  { img: Image1, name: "Docker" },
+  { img: Image2, name: ".xyz" },
+  { img: Image3, name: "Clothing partner" },
+];
+
 const SponsorsSection = () => {
   return (
     <section id="sponsors" className="bg-purple py-20 md:py-32">
@@ -10,32 +19,28 @@ const SponsorsSection = () => {
             Our Sponsors
           </h2>
         </div>
-        
+
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          {[...Array(8)].map((_, index) => (
+          {sponsors.map((sponsor, index) => (
             <div
               key={index}
               className="bg-white border-4 border-black shadow-bold-sm aspect-video flex items-center justify-center p-8 hover:scale-105 transition-transform"
             >
               <div className="text-center">
-                <div className="text-2xl font-black text-black">SPONSOR</div>
-                <div className="text-sm font-bold text-black">LOGO</div>
+                <div className="text-2xl font-black text-black mb-2">
+                  {sponsor.name}
+                </div>
+                <img
+                  src={sponsor.img}
+                  alt={sponsor.name}
+                  className="object-contain w-full h-full p-2"
+                />
               </div>
             </div>
           ))}
         </div>
+
         
-        <div className="text-center mt-16">
-          <p className="text-xl font-bold text-white mb-6">
-            Interested in sponsoring Azinhack 2025?
-          </p>
-          <a 
-            href="mailto:sponsors@azinhack.com"
-            className="inline-block bg-yellow text-black font-black text-xl px-8 py-4 border-4 border-black shadow-bold hover:bg-cyan hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
-          >
-            BECOME A SPONSOR
-          </a>
-        </div>
       </div>
     </section>
   );
