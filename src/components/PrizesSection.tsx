@@ -2,40 +2,40 @@ const PrizesSection = () => {
   const prizes = [
     {
       title: "1ST PLACE",
-      amount: "$5,000",
+      amount: "₹15,000",
       bg: "bg-yellow",
       description: "Top prize for the best overall project",
     },
     {
       title: "2ND PLACE",
-      amount: "$3,000",
+      amount: "₹10,000",
       bg: "bg-cyan",
       description: "Runner-up for outstanding innovation",
     },
     {
       title: "3RD PLACE",
-      amount: "$2,000",
+      amount: "₹5,000",
       bg: "bg-magenta",
       description: "Third place for exceptional work",
     },
-    {
-      title: "BEST UI/UX",
-      amount: "$1,000",
-      bg: "bg-lime",
-      description: "Best design and user experience",
-    },
-    {
-      title: "BEST AI/ML",
-      amount: "$1,000",
-      bg: "bg-purple",
-      description: "Most innovative use of AI/ML",
-    },
-    {
-      title: "SOCIAL IMPACT",
-      amount: "$1,000",
-      bg: "bg-cyan",
-      description: "Best project for social good",
-    },
+  //   {
+  //     title: "BEST UI/UX",
+  //     amount: "$1,000",
+  //     bg: "bg-lime",
+  //     description: "Best design and user experience",
+  //   },
+  //   {
+  //     title: "BEST AI/ML",
+  //     amount: "$1,000",
+  //     bg: "bg-purple",
+  //     description: "Most innovative use of AI/ML",
+  //   },
+  //   {
+  //     title: "SOCIAL IMPACT",
+  //     amount: "$1,000",
+  //     bg: "bg-cyan",
+  //     description: "Best project for social good",
+  //   },
   ];
 
   return (

@@ -1,8 +1,8 @@
 const StatsSection = () => {
   const stats = [
-    { value: "$10K+", label: "PRIZES", bg: "bg-purple" },
-    { value: "500+", label: "HACKERS", bg: "bg-cyan" },
-    { value: "50+", label: "PROJECTS", bg: "bg-yellow" },
+    { value: "₹100000+", label: "PRIZES", bg: "bg-purple" },
+    { value: "1000+", label: "HACKERS", bg: "bg-cyan" },
+    { value: "100+", label: "PROJECTS", bg: "bg-yellow" },
   ];
 
   return (
