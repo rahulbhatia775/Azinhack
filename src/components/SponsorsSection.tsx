@@ -7,8 +7,8 @@ import Image5 from "../assets/ishacafe.jpg";
 const sponsors = [
   { img: Image1 },
   { img: Image2 },
-  { img: Image3 },
   { img: Image4 },
+  { img: Image3 },
 ];
 
 const mainSponsor = { img: Image5 };
