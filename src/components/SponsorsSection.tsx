@@ -28,7 +28,7 @@ const SponsorsSection = () => {
           </h2>
         </div>
 
-        {/* Main Sponsor with text inside box */}
+    
         <div className="flex justify-center mb-16">
           <div className="relative bg-white border-4 border-black shadow-bold-sm flex items-center justify-center p-6 hover:scale-105 transition-transform">
             <img
@@ -42,7 +42,7 @@ const SponsorsSection = () => {
           </div>
         </div>
 
-        {/* Other Sponsors Grid (5 in a row) */}
+
         <div className="grid grid-cols-5 gap-6 max-w-6xl mx-auto justify-items-center">
           {sponsors.map((sponsor, index) => (
             <div
