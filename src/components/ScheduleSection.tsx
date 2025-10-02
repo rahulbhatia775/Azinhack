@@ -1,17 +1,13 @@
 const ScheduleSection = () => {
   const schedule = [
-    { time: "6:00 PM", event: "Check-in & Registration", day: "Day 1" },
-    { time: "7:00 PM", event: "Opening Ceremony", day: "Day 1" },
-    { time: "8:00 PM", event: "Hacking Begins!", day: "Day 1" },
-    { time: "9:00 PM", event: "Dinner & Networking", day: "Day 1" },
-    { time: "11:00 PM", event: "Workshop: AI & ML Basics", day: "Day 1" },
-    { time: "12:00 AM", event: "Midnight Snacks", day: "Night" },
-    { time: "8:00 AM", event: "Breakfast", day: "Day 2" },
-    { time: "12:00 PM", event: "Lunch", day: "Day 2" },
-    { time: "2:00 PM", event: "Hacking Ends", day: "Day 2" },
-    { time: "3:00 PM", event: "Project Demos", day: "Day 2" },
-    { time: "5:00 PM", event: "Judging", day: "Day 2" },
-    { time: "6:00 PM", event: "Closing & Awards Ceremony", day: "Day 2" },
+    { time: "08:30 AM - 10:00 AM", event: "Reporting & Registration of teams", day: "Day 1" },
+    { time: "12:30 PM", event: "Hackathon officially commences (coding starts)", day: "Day 1" },
+    { time: "09:00 PM - 10:30 PM", event: "Dinner & Refreshment Break", day: "Day 1" },
+    { time: "11:00 PM", event: "First Mentorship Round (Mentors visit teams, feedback & guidance)", day: "Day 1" },
+    { time: "06:00 AM", event: "Second Mentorship Round (Mentors interact with teams again)", day: "Day 2" },
+    { time: "08:30 AM", event: "Results of Mentorship Round (Shortlisted/qualified teams announced)", day: "Day 2" },
+    { time: "09:00 AM", event: "Final Presentations by shortlisted teams", day: "Day 2" },
+    { time: "12:00 PM", event: "Result Announcement & Closing Ceremony", day: "Day 2" },
   ];
 
   return (
@@ -31,7 +27,7 @@ const ScheduleSection = () => {
           SCHEDULE
         </h2>
         
-        <div className="max-w-4xl mx-auto space-y-4">
+        <div className="max-w-5xl mx-auto space-y-4">
           {schedule.map((item, index) => (
             <div
               key={index}
@@ -41,10 +37,10 @@ const ScheduleSection = () => {
                 <div className="bg-magenta border-2 border-black px-4 py-2 font-black text-black text-sm inline-block w-fit">
                   {item.day}
                 </div>
-                <div className="text-2xl md:text-3xl font-black text-black">
+                <div className="text-xl md:text-2xl font-black text-black min-w-fit">
                   {item.time}
                 </div>
-                <div className="flex-1 text-xl md:text-2xl font-bold text-black">
+                <div className="flex-1 text-lg md:text-xl font-bold text-black">
                   {item.event}
                 </div>
               </div>
