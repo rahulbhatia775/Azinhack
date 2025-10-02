@@ -18,4 +18,5 @@ const MarqueeBanner = () => {
   );
 };
 
+
 export default MarqueeBanner;

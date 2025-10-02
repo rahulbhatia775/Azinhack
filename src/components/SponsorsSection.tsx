@@ -8,12 +8,11 @@ import Image6 from "../assets/monster.png";
 const sponsors = [
   { img: Image1 },
   { img: Image2 },
-  { img: Image3 },
+  //{ img: Image3 },
   { img: Image4 },
-  { img: Image6 },
+  //{ img: Image6 },
 ];
 const mainSponsor = { img: Image5 };
-
 
 const SponsorsSection = () => {
   return (
@@ -28,8 +27,7 @@ const SponsorsSection = () => {
           </h2>
         </div>
 
-    
-        <div className="flex justify-center mb-16">
+         <div className="flex justify-center mb-16">
           <div className="relative bg-white border-4 border-black shadow-bold-sm flex items-center justify-center p-6 hover:scale-105 transition-transform">
             <img
               src={mainSponsor.img}
@@ -37,26 +35,28 @@ const SponsorsSection = () => {
               alt="Main Sponsor"
             />
             <span className="absolute top-2 text-black font-bold text-lg md:text-xl bg-white px-2 rounded">
-              Main Sponsor
+              Title Sponsor
             </span>
           </div>
         </div>
 
-
-        <div className="grid grid-cols-5 gap-6 max-w-6xl mx-auto justify-items-center">
+        {/* Other Sponsors */}
+        <div className="flex flex-wrap justify-center items-center gap-6 max-w-6xl mx-auto">
           {sponsors.map((sponsor, index) => (
             <div
               key={index}
-              className="bg-white border-4 border-black shadow-bold-sm flex items-center justify-center p-6 hover:scale-105 transition-transform"
+              className="bg-white border-4 border-black shadow-bold-sm flex items-center justify-center p-4 hover:scale-105 transition-transform w-32 h-32 md:w-40 md:h-40"
             >
               <img
                 src={sponsor.img}
-                className="object-contain w-40 h-40"
+                className="object-contain w-full h-full"
                 alt={`Sponsor ${index + 1}`}
               />
             </div>
           ))}
         </div>
+
+        
       </div>
     </section>
   );
