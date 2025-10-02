@@ -12,6 +12,8 @@ import karan from "../assets/KARAN BHATT.jpg";
 import khushi from "../assets/Khushi_Thakur.jpg";
 import pari from "../assets/pari.png";
 import parth from "../assets/ParthMawai.jpg";
+import vasu from "../assets/Vasu Tohangar.jpg";
+import samarth from "../assets/Samarth Yadav.jpg";
 
 import rahul from "../assets/Rahul Bhatia.jpeg";
 import pawan from "../assets/Pawan Yadav.jpg";
@@ -27,14 +29,15 @@ const teamMembers = [
   { name: "Karan Bhatt", role: "Mentor", img: karan },
   { name: "Pari Dudeja", role: "Mentor", img: pari },
   { name: "Parth Mawai", role: "Mentor", img: parth },
+  { name: "Vasu Tohangar", role: "Mentor", img: vasu },
+  { name: "Samarth Yadav", role: "Mentor", img: samarth },
 ];
 
 const coreMembers = [
   { name: "Rahul Bhatia", role: "Team i3", img: rahul },
-  { name: "Pawan Yadav", role: "Team i3", img: pawan },
-  { name: "Mayank Bisht", role: "Team i3", img: mayank },
   { name: "Waqar Akhtar", role: "Team i5", img: waqar },
-  { name: "Akshat Talwar", role: "Team i9", img: akshat },
+  { name: "Pawan Yadav", role: "Team i3", img: pawan },
+  { name: "Mayank Bisht", role: "Team i5", img: mayank },
 ];
 
 const TeamSection = () => {
@@ -127,6 +130,17 @@ const TeamSection = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        {/* Text below arrow for mobile clarity */}
+          <div className="text-center mt-4">
+            <a
+              href="https://iosc-edc.club/team"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black font-bold hover:text-magenta transition-colors"
+            >
+              View All Team Members →
+            </a>
+          </div>
       </div>
     </section>
   );
