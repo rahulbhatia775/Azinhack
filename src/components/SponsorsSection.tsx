@@ -2,13 +2,15 @@ import Image1 from "../assets/Docker.png";
 import Image2 from "../assets/xyz.png"; 
 import Image3 from "../assets/clothing.png"; 
 import Image4 from "../assets/keshav.png";
-import Image5 from "../assets/ishacafe.jpg";
+import Image5 from "../assets/ishacoffefinal.jpeg";
+import Image6 from "../assets/monster.png";
 
 const sponsors = [
   { img: Image1 },
   { img: Image2 },
-  { img: Image4 },
   { img: Image3 },
+  { img: Image4 },
+  { img: Image6 },
 ];
 
 const mainSponsor = { img: Image5 };
@@ -26,20 +28,22 @@ const SponsorsSection = () => {
           </h2>
         </div>
 
-        
-        <div className="flex flex-col items-center mb-16">
-          
-          <div className="bg-white border-4 border-yellow-400 shadow-xl flex items-center justify-center p-8 hover:scale-110 transition-transform rounded-xl">
+        {/* Main Sponsor with text inside box */}
+        <div className="flex justify-center mb-16">
+          <div className="relative bg-white border-4 border-black shadow-bold-sm flex items-center justify-center p-6 hover:scale-105 transition-transform">
             <img
               src={mainSponsor.img}
-              className="object-contain w-64 h-64"
+              className="object-contain w-48 h-48 md:w-52 md:h-52"
               alt="Main Sponsor"
             />
+            <span className="absolute top-2 text-black font-bold text-lg md:text-xl bg-white px-2 rounded">
+              Main Sponsor
+            </span>
           </div>
         </div>
 
-        
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        {/* Other Sponsors Grid (5 in a row) */}
+        <div className="grid grid-cols-5 gap-6 max-w-6xl mx-auto justify-items-center">
           {sponsors.map((sponsor, index) => (
             <div
               key={index}
