@@ -1,3 +1,20 @@
+import Image1 from "../assets/Docker.png";
+import Image2 from "../assets/xyz.png"; 
+import Image3 from "../assets/clothing.png"; 
+import Image4 from "../assets/keshav.png";
+import Image5 from "../assets/ishacoffefinal.jpeg";
+import Image6 from "../assets/monster.png";
+
+const sponsors = [
+  { img: Image1 },
+  { img: Image2 },
+  { img: Image3 },
+  { img: Image4 },
+  { img: Image6 },
+];
+const mainSponsor = { img: Image5 };
+
+
 const SponsorsSection = () => {
   return (
     <section id="sponsors" className="bg-purple py-20 md:py-32">
@@ -10,31 +27,35 @@ const SponsorsSection = () => {
             Our Sponsors
           </h2>
         </div>
-        
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          {[...Array(8)].map((_, index) => (
+
+    
+        <div className="flex justify-center mb-16">
+          <div className="relative bg-white border-4 border-black shadow-bold-sm flex items-center justify-center p-6 hover:scale-105 transition-transform">
+            <img
+              src={mainSponsor.img}
+              className="object-contain w-48 h-48 md:w-52 md:h-52"
+              alt="Main Sponsor"
+            />
+            <span className="absolute top-2 text-black font-bold text-lg md:text-xl bg-white px-2 rounded">
+              Main Sponsor
+            </span>
+          </div>
+        </div>
+
+
+        <div className="grid grid-cols-5 gap-6 max-w-6xl mx-auto justify-items-center">
+          {sponsors.map((sponsor, index) => (
             <div
               key={index}
-              className="bg-white border-4 border-black shadow-bold-sm aspect-video flex items-center justify-center p-8 hover:scale-105 transition-transform"
+              className="bg-white border-4 border-black shadow-bold-sm flex items-center justify-center p-6 hover:scale-105 transition-transform"
             >
-              <div className="text-center">
-                <div className="text-2xl font-black text-black">SPONSOR</div>
-                <div className="text-sm font-bold text-black">LOGO</div>
-              </div>
+              <img
+                src={sponsor.img}
+                className="object-contain w-40 h-40"
+                alt={`Sponsor ${index + 1}`}
+              />
             </div>
           ))}
-        </div>
-        
-        <div className="text-center mt-16">
-          <p className="text-xl font-bold text-white mb-6">
-            Interested in sponsoring Azinhack 2025?
-          </p>
-          <a 
-            href="mailto:sponsors@azinhack.com"
-            className="inline-block bg-yellow text-black font-black text-xl px-8 py-4 border-4 border-black shadow-bold hover:bg-cyan hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
-          >
-            BECOME A SPONSOR
-          </a>
         </div>
       </div>
     </section>
