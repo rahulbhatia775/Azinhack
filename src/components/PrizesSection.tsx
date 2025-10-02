@@ -45,7 +45,7 @@ const PrizesSection = () => {
           PRIZES
         </h2>
         <p className="text-2xl font-bold text-black text-center mb-16">
-          Over $10,000 in prizes to be won!
+          Over ₹1,00,000+ in prizes to be won!
         </p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">

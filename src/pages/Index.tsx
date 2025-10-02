@@ -21,12 +21,14 @@ const Index = () => {
       <ScheduleSection />
       <MarqueeRotated/>
       <PrizesSection />
+      <MarqueeBanner />
       <SponsorsSection />
       <MarqueeBanner />
       <TeamSection />
       <FAQSection />
       <MarqueeRotated/>
       <ContactSection />
+      <MarqueeBanner />
     </div>
   );
 };

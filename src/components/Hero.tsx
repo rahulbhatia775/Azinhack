@@ -1,26 +1,50 @@
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
+  // helper for smooth scroll
+  const handleScroll = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="relative min-h-screen bg-cyan overflow-hidden">
       {/* Navigation */}
       <nav className="relative z-10 flex justify-between items-center p-6 md:p-8">
         <div className="text-4xl md:text-5xl font-black text-black border-4 border-black px-4 py-2 bg-cyan">
-          A
+          IoSC EDC
         </div>
         <div className="flex gap-4 md:gap-6 items-center">
-          <a href="#about" className="hidden md:block text-lg font-black text-black hover:text-magenta transition-colors">
+          <button
+            onClick={() => handleScroll("about")}
+            className="hidden md:block text-lg font-black text-black hover:text-magenta transition-colors"
+          >
             ABOUT
-          </a>
-          <a href="#faq" className="hidden md:block text-lg font-black text-black hover:text-magenta transition-colors">
+          </button>
+          <button
+            onClick={() => handleScroll("faq")}
+            className="hidden md:block text-lg font-black text-black hover:text-magenta transition-colors"
+          >
             FAQ
-          </a>
-          <a href="#sponsors" className="hidden md:block text-lg font-black text-black hover:text-magenta transition-colors">
+          </button>
+          <button
+            onClick={() => handleScroll("sponsors")}
+            className="hidden md:block text-lg font-black text-black hover:text-magenta transition-colors"
+          >
             SPONSOR
-          </a>
-          <Button 
-            className="bg-magenta text-black font-black text-lg border-4 border-black shadow-bold hover:bg-yellow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          </button>
+          <button
+            onClick={() => handleScroll("team")}
+            className="hidden md:block text-lg font-black text-black hover:text-magenta transition-colors"
+          >
+            MENTORS
+          </button>
+
+          {/* APPLY NOW button with smooth animation + redirect */}
+          <Button
+            className="bg-magenta text-black font-black text-lg border-4 border-black shadow-bold
+                       transition-transform duration-300 ease-in-out
+                       hover:bg-yellow hover:translate-x-2 hover:translate-y-2 hover:shadow-none hover:scale-105 active:scale-95"
+            onClick={() => window.open("https://unstop.com", "_blank")}
           >
             APPLY NOW
           </Button>
@@ -34,7 +58,9 @@ const Hero = () => {
           <div className="space-y-6">
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-black leading-none">
               AZINHACK
-              <span className="block text-white [-webkit-text-stroke:3px_black]">2025</span>
+              <span className="block text-white [-webkit-text-stroke:3px_black]">
+                2025
+              </span>
             </h1>
             <p className="text-xl md:text-2xl font-bold text-black max-w-md">
               Innovate. Code. Create. 24 Hours of Innovation.
@@ -46,7 +72,7 @@ const Hero = () => {
 
           {/* Right side - Decorative shapes */}
           <div className="relative h-96 md:h-[500px]">
-            {/* Smiley faces inspired by reference */}
+            {/* Smiley faces */}
             <div className="absolute top-0 left-0 w-48 h-48 md:w-64 md:h-64 bg-lime border-4 border-black rounded-full flex items-center justify-center animate-float">
               <div className="space-y-4">
                 <div className="flex gap-8 justify-center">
@@ -56,8 +82,11 @@ const Hero = () => {
                 <div className="w-24 h-12 bg-black rounded-full"></div>
               </div>
             </div>
-            
-            <div className="absolute top-20 right-0 w-40 h-40 md:w-56 md:h-56 bg-magenta border-4 border-black rounded-full flex items-center justify-center" style={{ animationDelay: '1s' }}>
+
+            <div
+              className="absolute top-20 right-0 w-40 h-40 md:w-56 md:h-56 bg-magenta border-4 border-black rounded-full flex items-center justify-center"
+              style={{ animationDelay: "1s" }}
+            >
               <div className="space-y-3">
                 <div className="flex gap-6 justify-center">
                   <div className="w-6 h-10 bg-black rounded-full"></div>
@@ -67,7 +96,10 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="absolute bottom-0 left-1/4 w-36 h-36 md:w-48 md:h-48 bg-yellow border-4 border-black rounded-full flex items-center justify-center animate-float" style={{ animationDelay: '2s' }}>
+            <div
+              className="absolute bottom-0 left-1/4 w-36 h-36 md:w-48 md:h-48 bg-yellow border-4 border-black rounded-full flex items-center justify-center animate-float"
+              style={{ animationDelay: "2s" }}
+            >
               <div className="space-y-2">
                 <div className="flex gap-4 justify-center">
                   <div className="w-5 h-8 bg-black rounded-full"></div>
