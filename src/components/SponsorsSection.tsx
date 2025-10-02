@@ -1,11 +1,17 @@
 import Image1 from "../assets/Docker.png";
-import Image2 from "../assets/xyz-logo.png"; 
-import Image3 from "../assets/clothing.jpg"; 
+import Image2 from "../assets/xyz.png"; 
+import Image3 from "../assets/clothing.png"; 
+import Image4 from "../assets/keshav.png";
+import Image5 from "../assets/ishacafe.jpg";
+
 const sponsors = [
-  { img: Image1, name: "Docker" },
-  { img: Image2, name: ".xyz" },
-  { img: Image3, name: "Clothing partner" },
+  { img: Image1 },
+  { img: Image2 },
+  { img: Image3 },
+  { img: Image4 },
 ];
+
+const mainSponsor = { img: Image5 };
 
 const SponsorsSection = () => {
   return (
@@ -20,27 +26,33 @@ const SponsorsSection = () => {
           </h2>
         </div>
 
+        
+        <div className="flex flex-col items-center mb-16">
+          
+          <div className="bg-white border-4 border-yellow-400 shadow-xl flex items-center justify-center p-8 hover:scale-110 transition-transform rounded-xl">
+            <img
+              src={mainSponsor.img}
+              className="object-contain w-64 h-64"
+              alt="Main Sponsor"
+            />
+          </div>
+        </div>
+
+        
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {sponsors.map((sponsor, index) => (
             <div
               key={index}
-              className="bg-white border-4 border-black shadow-bold-sm aspect-video flex items-center justify-center p-8 hover:scale-105 transition-transform"
+              className="bg-white border-4 border-black shadow-bold-sm flex items-center justify-center p-6 hover:scale-105 transition-transform"
             >
-              <div className="text-center">
-                <div className="text-2xl font-black text-black mb-2">
-                  {sponsor.name}
-                </div>
-                <img
-                  src={sponsor.img}
-                  alt={sponsor.name}
-                  className="object-contain w-full h-full p-2"
-                />
-              </div>
+              <img
+                src={sponsor.img}
+                className="object-contain w-40 h-40"
+                alt={`Sponsor ${index + 1}`}
+              />
             </div>
           ))}
         </div>
-
-        
       </div>
     </section>
   );
