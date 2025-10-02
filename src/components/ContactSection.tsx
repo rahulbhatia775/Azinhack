@@ -115,7 +115,7 @@ const ContactSection = () => {
             </div>
 
             <div className="text-lg font-bold text-black">
-              📧 iosc.edc@gmail.com | 📱 +91 93687 53494 (Mr Utkarsh Chauhan, Lead IoSC EDC)
+               iosc.edc@gmail.com |  +91 93687 53494 (Mr Utkarsh Chauhan, Lead IoSC EDC)
             </div>
           </div>
         </div>
