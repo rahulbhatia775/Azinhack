@@ -12,8 +12,8 @@ const sponsors = [
   { img: Image4 },
   { img: Image6 },
 ];
-
 const mainSponsor = { img: Image5 };
+
 
 const SponsorsSection = () => {
   return (
