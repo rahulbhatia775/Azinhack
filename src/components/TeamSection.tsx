@@ -17,7 +17,7 @@ import samarth from "../assets/Samarth Yadav.jpg";
 
 import rahul from "../assets/Rahul Bhatia.jpeg";
 import pawan from "../assets/Pawan Yadav.jpg";
-import mayank from "../assets/Mayank Bisht.jpg";
+import mayank from "../assets/Mayank Bisht.jpeg";
 import waqar from "../assets/Waqar Akhtar.jpeg";
 import akshat from "../assets/Akshat talwar.jpg";
 
@@ -37,7 +37,7 @@ const coreMembers = [
   { name: "Rahul Bhatia", role: "Team i3", img: rahul },
   { name: "Waqar Akhtar", role: "Team i5", img: waqar },
   { name: "Pawan Yadav", role: "Team i3", img: pawan },
-  { name: "Mayank Bisht", role: "Team i5", img: mayank },
+  { name: "Mayank Bisht", role: "Team i3", img: mayank },
 ];
 
 const TeamSection = () => {

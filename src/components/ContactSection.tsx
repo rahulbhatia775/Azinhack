@@ -17,34 +17,7 @@ const ContactSection = () => {
       id="contact"
       className="bg-magenta py-20 md:py-32 border-t-8 border-black relative overflow-hidden"
     >
-      {/* Decorative background elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-10 w-40 h-40 bg-yellow border-4 border-black rotate-45 animate-float opacity-20" />
-        <div
-          className="absolute top-10 right-20 w-32 h-32 rounded-full bg-cyan border-4 border-black animate-float opacity-20"
-          style={{ animationDelay: "0.5s" }}
-        />
-        <div
-          className="absolute bottom-40 left-1/4 w-28 h-28 bg-purple border-4 border-black -rotate-12 animate-float opacity-20"
-          style={{ animationDelay: "1s" }}
-        />
-        <div
-          className="absolute bottom-20 right-1/4 w-36 h-36 bg-lime border-4 border-black rotate-12 animate-float opacity-20"
-          style={{ animationDelay: "1.5s" }}
-        />
-        <div
-          className="absolute top-1/3 right-10 w-24 h-24 rounded-full bg-yellow border-4 border-black animate-float opacity-20"
-          style={{ animationDelay: "0.8s" }}
-        />
-        <div
-          className="absolute top-1/2 left-20 w-32 h-32 bg-cyan border-4 border-black rotate-6 animate-float opacity-20"
-          style={{ animationDelay: "1.2s" }}
-        />
-        <div
-          className="absolute bottom-60 right-40 w-20 h-20 rounded-full bg-purple border-4 border-black animate-float opacity-20"
-          style={{ animationDelay: "2s" }}
-        />
-      </div>
+      
 
       {/* ✅ Logo in top-left
       <div className="absolute top-6 left-6 z-20">

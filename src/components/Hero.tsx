@@ -180,30 +180,6 @@ const Hero = () => {
               AZINHACK <span className="block">2025</span>
             </h1>
           </div>
-          {/* Apply Now vertical button outside and overlapping top right of central rectangle */}
-          <div className="absolute top-10 right-10 z-30" style={{ transform: "translate(60%, -20%)" }}>
-            <Button
-              className="bg-black text-white font-black text-2xl border-4 border-black rounded-none shadow px-8 py-4 flex flex-col items-center justify-center"
-              style={{
-                writingMode: "vertical-rl",
-                textOrientation: "upright",
-                letterSpacing: "-0.30em",
-                boxShadow: "0 2px 12px #000",
-                minHeight: "280px",
-                minWidth: "25px",
-                textAlign: "center",
-                fontWeight: 300,
-                fontFamily: "inherit",
-                fontSize: "1.4rem",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              APPLY NOW
-            </Button>
-          </div>
         </div>
       </div>
 
